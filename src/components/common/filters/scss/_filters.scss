@@ -1,0 +1,17 @@
+.filters {
+  flex-basis: 100%;
+  align-self: stretch;
+  padding: 20px 20px;
+  margin-top: 20px ;
+  // height: 100%;
+  &>h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 867px) {
+  margin-bottom: 20px;
+  }
+}

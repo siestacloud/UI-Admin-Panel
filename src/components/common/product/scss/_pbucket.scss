@@ -1,0 +1,131 @@
+.pbucket {
+  flex-basis: 78%;
+  align-self: stretch;
+  padding: 20px;
+
+  &__row {
+    height: 100%;
+    @include f(space-between, flex-start, row);
+    flex-wrap: wrap;
+
+    &-close {
+      @include f(space-between, center, row);
+    padding-bottom: 20px;
+
+    }
+
+    &-btns {
+      margin-top: 20px;
+      padding: 0px;
+      @include f(space-between, center, row);
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+
+  &__column {
+    @include f(space-between, flex-start, column);
+    height: 100%;
+  }
+
+
+  &__img {
+    align-self: stretch;
+    border-radius: 8px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-min {
+      border-radius: 8px;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100px;
+      margin: 0px 0px 20px 0px;
+    }
+  }
+
+  &__imgs {
+    padding: 0px 20px 20px 20px;
+  }
+
+  &__name {
+    font-size: 30px;
+    font-weight: 600;
+
+  }
+
+  &__info {
+    padding-bottom: 20px;
+    font-size: 20px;
+
+    &>span {
+      font-weight: 600;
+      color: $desc-grey;
+    }
+
+    &>span.m-yello {
+      border-radius: 8px;
+      padding: 2px 6px;
+      background: linear-gradient(90.21deg, #e2b5d2 -5.91%, #f7d066 111.58%);
+      color: #fff;
+    }
+
+    &>span.m-green {
+      border-radius: 8px;
+      padding: 2px 6px;
+      background: linear-gradient(90.21deg, #72dfb7 -5.91%, #36a62a 111.58%);
+      color: #fff;
+    }
+  }
+
+  &__counter {
+    // padding-bottom: 20px;
+    font-size: 20px;
+    color: $desc-grey;
+
+  }
+
+  &__desc {
+    // height: 250px;
+    font-style: italic;
+    font-size: 18px;
+    color: $desc-grey;
+
+  }
+
+  @media (max-width: 867px) {
+    &__row {
+      display: block;
+
+      &-close {
+
+        @include f(space-between, center, row);
+      }
+    }
+
+    &__column {
+      margin-top: 20px;
+    }
+
+    &__img {
+      height: 200px;
+
+      &-min {
+        flex-basis: 25%;
+      }
+    }
+
+    &__imgs {
+      display: none;
+    }
+
+    &__desc {
+      height: auto;
+    }
+  }
+
+}

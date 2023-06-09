@@ -1,0 +1,46 @@
+//? <ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>
+
+//* переиспользуемые стили
+@import "base/module.scss";
+@import "common/module.scss";
+
+//* базовая расстановка контента на странице
+@import "layout/module.scss";
+
+@import "../components/pages/general/scss/module.scss";
+@import "../components/pages/category/scss/module.scss";
+@import "../components/pages/auth/scss/module.scss";
+@import "../components/pages/area/scss/module.scss";
+
+
+//* подключаю стили для компонентов
+
+@import "../components/common/logo/scss/module.scss";
+@import "../components/common/burger/scss/module.scss";
+@import "../components/common/search/scss/module.scss";
+@import "../components/common/news/scss/module.scss";
+@import "../components/common/menu/scss/module.scss";
+@import "../components/common/trend/scss/module.scss";
+@import "../components/common/btn/scss/module.scss";
+@import "../components/common/collage/scss/module.scss";
+@import "../components/common/sale/scss/module.scss";
+@import "../components/common/social/scss/module.scss";
+@import "../components/common/product/scss/module.scss";
+@import "../components/common/tooltips/scss/module.scss";
+@import "../components/common/dropdown/scss/module.scss";
+@import "../components/common/filters/scss/module.scss";
+@import "../components/common/title/scss/module.scss";
+@import "../components/common/login/scss/module.scss";
+@import "../components/common/checkbox/scss/module.scss";
+@import "../components/common/client/bucket/scss/module.scss";
+@import "../components/common/client/favorite/scss/module.scss";
+@import "../components/common/client/settings/scss/module.scss";
+@import "../components/common/client/nav/scss/module.scss";
+
+
+
+@import "common/_mod.scss";
+
+
+
+//? </ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>

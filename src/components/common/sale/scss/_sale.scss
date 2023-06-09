@@ -1,0 +1,35 @@
+.sale {
+  &__row{
+    @include f(space-between,center,row);
+    padding: 20px;
+  }
+  &__column{
+    @include f(center,center,column);
+    gap: 20px;
+  }
+  &__head{
+    text-align: center;
+    flex: 1 1 50%;
+    font-size: 5em;
+    font-weight: 200;
+    font-family: $fontfamily-v3;
+  }
+  &__img{
+    width: 100%;
+    min-height: 500px;
+    flex: 1 1 50%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // flex-grow: 1;
+  }
+  @media (max-width: 867px) {
+    &__row {
+    @include f(space-between,center,column);
+gap: 20px;
+
+    }
+  }
+}

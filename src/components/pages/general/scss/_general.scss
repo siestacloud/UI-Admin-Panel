@@ -1,0 +1,16 @@
+.general {
+
+  &__row {
+    @include f(space-between, flex-start, row);
+
+    margin: 20px 0px;
+  }
+
+  @media (max-width: 867px) {
+    &__row {
+
+      @include f(space-between, flex-start, column);
+      gap: 20px;
+    }
+  }
+}

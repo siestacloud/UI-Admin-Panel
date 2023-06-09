@@ -1,0 +1,28 @@
+// <ОСНОВНОЙ БЛОК>
+
+.main {
+  grid-area: main;
+
+  display: grid;
+  grid-template: 1fr / minmax(15px, 1fr) minmax(10px, 1340px) minmax(15px, 1fr);
+
+
+  &__wrapper {
+    padding-top: 100px;
+    grid-area: 1/2;
+  }
+
+
+
+  @media (max-width: 867px) {
+    &__row {
+      @include f(space-between, center, column);
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-bottom: 25px;
+    }
+  }
+}
+
+
+// @media (max-width: 867px) {}

@@ -1,0 +1,7 @@
+.favorite{
+    &__row {
+      margin-top: 20px;
+      @include f(space-between, center, column);
+      gap: 20px;
+    }
+}
