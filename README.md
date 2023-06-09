@@ -5,7 +5,7 @@
 
 
 <div align="center">
-<h3 align="center">UI Hit shop</h3>
+<h3 align="center">UI Admin Panel</h3>
 
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
@@ -16,13 +16,12 @@
 
 ---
 
-<p align="center"> Фронт для интернет магазина
+<p align="center"> Админ панель для интернет магазина
     <br> 
 </p>
 
 
 # Hit Shop
-
 
 ## Table of Contents
 
@@ -41,8 +40,8 @@
 
 ###  Installing
 ```
-git clone  git@github.com:siestacloud/UI-HitShop.git
-cd UI-HitShop/
+git clone  https://github.com/siestacloud/UI-Admin-Panel.git
+cd UI-Admin-Panel/
 ```
 `npm`
 ```
