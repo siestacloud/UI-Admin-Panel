@@ -8,11 +8,10 @@ import { useToggle } from "../../../hooks/useToggle";
 import { Link } from 'react-router-dom';
 import { useAppState } from '../../../hooks/appHook';
 import { BtnSvg } from '../btn/btn';
-import { Search } from '../search/search';
 
 export function BurgerMenu() {
   const [MenuState, setMenuState] = useToggle(false);
-  let { Show } = useAppState()
+  let { ShowMenu } = useAppState()
 
   return (
     <article className="burger">
@@ -22,13 +21,13 @@ export function BurgerMenu() {
       </button>
       <div className={`burger__menu ${MenuState ? 'burger__menu-active' : ''}`}>
 
-        <Search></Search>
+        {/* <Search></Search> */}
         <div className={`burger__row `}>
-          <Link to={`/`}><BtnSvg f={() => { }} svg={general} /></Link>
-          <Link to={`/login`}><BtnSvg f={() => { }} svg={login} /></Link>
-          <Link to={`/area/settings`}><BtnSvg f={() => { Show(0) }} svg={client} /></Link>
-          <Link to={`/area/bucket`}><BtnSvg f={() => { Show(1) }} svg={bag} /></Link>
-          <Link to={`/area/favorite`}><BtnSvg f={() => { Show(2) }} svg={love} /></Link>
+          <Link to={`/`}><BtnSvg f={() => { }} svg={general} tooltip={""}/></Link>
+          <Link to={`/login`}><BtnSvg f={() => { }} svg={login} tooltip={""} /></Link>
+          <Link to={`/area/settings`}><BtnSvg f={() => { ShowMenu(0) }} svg={client}  tooltip={""}/></Link>
+          <Link to={`/area/bucket`}><BtnSvg f={() => { ShowMenu(1) }} svg={bag} tooltip={""}/></Link>
+          <Link to={`/area/favorite`}><BtnSvg f={() => { ShowMenu(2) }} svg={love} tooltip={""}/></Link>
         </div>
       </div>
     </article>

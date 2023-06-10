@@ -10,14 +10,13 @@
   height: 100%;
 
     display: grid;
-    grid-template: 1fr/minmax(15px,20px) minmax(56px,56px) minmax(10px,1fr) minmax(15px,20px);
+    grid-template: 1fr/ minmax(86px,86px) minmax(10px,1fr) ;
     padding-top: 100px;
+    position: relative;
   }
 
 
   @media (max-width: 867px) {
-    &__row {
-    }
   }
 }
 

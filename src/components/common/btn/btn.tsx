@@ -1,3 +1,5 @@
+import { useAppState } from "../../../hooks/appHook";
+
 interface props {
   style: string
   content: string
@@ -12,10 +14,15 @@ export function Btn({ style, content }: props) {
 interface propsSvg {
   svg: string
   f: () => void
+  tooltip: string
 }
-export function BtnSvg({ svg, f }: propsSvg) {
+export function BtnSvg({ svg, f ,tooltip}: propsSvg) {
+
+  const {AppState} = useAppState();
+
+
   return (
-    <button className="btn__btn" onClick={() => f()} data-tooltip="Menu">
+    <button className={`btn__btn ${AppState.theme ? 'theme-light-hover' : 'theme-dark-hover'} `} onClick={() => f()} data-tooltip={tooltip}>
       <div style={{ backgroundImage: `url(${svg})` }} className='btn__ico'  ></div>
     </button>
   );

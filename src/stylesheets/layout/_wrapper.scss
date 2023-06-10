@@ -8,8 +8,9 @@
 // <ОБОЛОЧКА>
 .wrapper {
   color: $title-light;
-  background-color: $bg-dark;
   min-height: 100%;
+  transition: background-color 0.1s ease-in-out;
+
   display: grid;
   grid-template: auto 1fr minmax(70px, auto) / minmax(80px, auto);
   

@@ -1,23 +1,25 @@
 
 
 export interface AppState {
-  areaSectionList: ControlAreaSection[]
+  theme: boolean
+  menuSectionList: ControlMenuSection[]
 
 }
 
-export interface ControlAreaSection {
+export interface ControlMenuSection {
   sectionName:string
   enable: boolean
-  style: string
-  uri: string
 }
 
 
 export const DEF_APP_STATE: AppState = {
-  areaSectionList: [
-    { sectionName:"Настройки",uri: "/area/settings", enable: true, style: "border-mod-one" },
-    { sectionName:"Корзина",uri: "/area/bucket", enable: false, style: "border-mod-two" },
-    { sectionName:"Избранное",uri: "/area/favorite", enable: false, style: "border-mod-three" }
+  theme: true,
+  menuSectionList: [
+    { sectionName:"Меню", enable: false  },
+    { sectionName:"Поиск", enable: false  },
+    
+    { sectionName:"Тема", enable: false  },
+    { sectionName:"Профиль", enable: false },
   ]
 }
 

@@ -2,14 +2,50 @@ $bg-dark: #1b1b1e;
 $bg-grey: #2e2f33;
 $bg-tooltip: #ffffff;
 
-$bg-light: #fff;
+$bg-light: #f1f1f1;
 $title-light: #fff;
 $desc-light: #fff;
 
+$font-color-grey: #000000d5;
+$font-color-light: #D6D6D6;
 
 $title-grey: #acaaaf;
-$desc-grey: #acaaaf;
+$desc-grey: #4d4b4e;
 
 
 $bg-box-dark-tr: #020202b9;
 $bg-box-dark: #19171b;
+
+.theme-dark{
+  background-color: $bg-dark;
+}
+.theme-dark-font{
+  color: $font-color-light;
+}
+.theme-dark-menu{
+  background-color: rgba(2, 2, 2, 0.7254901961);
+}
+.theme-dark-sub-menu{
+  background-color: #26272b;
+}
+.theme-dark-hover{
+  &:hover {
+    background-color: $bg-dark;
+  }
+}
+
+
+.theme-light{
+  background-color: $bg-light;
+}
+.theme-light-font{
+  color: $font-color-grey;
+}
+.theme-light-menu{
+  background-color: $bg-tooltip;
+}
+.theme-light-hover{
+  &:hover {
+    background-color: $bg-light;
+  }
+}
