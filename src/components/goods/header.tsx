@@ -13,7 +13,6 @@ function Header() {
     <header className="header">
       <div className={`header__wrapper ${ScrollState ? "scrolled" : ""}`}>
         <Logo logo="HitShop" />
-        <Search></Search>
         <BurgerMenu/>
       </div>
     </header>

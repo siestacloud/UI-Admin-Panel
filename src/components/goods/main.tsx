@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import { General } from "../pages/general/general";
 import { useAppState } from "../../hooks/appHook";
+import { NavBar } from "../common/navbar/navbar";
 
 
 function Main() {
@@ -9,9 +10,8 @@ function Main() {
   return (
     <main className='main'>
       <div className="main__wrapper">
-        <Routes>
-          <Route path={`/*`} element={<General />} />
-        </Routes>
+        <NavBar />
+        <General />
       </div>
     </main>
   );

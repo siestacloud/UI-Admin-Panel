@@ -6,10 +6,11 @@
   width: 100%;
   position: fixed;
   display: grid;
-  grid-template: 1fr / minmax(15px, 1fr) minmax(10px, 1240px) minmax(15px, 1fr);
+  grid-template: 1fr / minmax(15px, 20px) minmax(10px, 1fr) minmax(15px, 20px);
+
 
   &__wrapper {
-    padding: 22px 11px;
+    padding: 22px 8px;
     grid-area: 1/2;
     display: flex;
     align-items: center;
