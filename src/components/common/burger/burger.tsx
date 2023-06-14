@@ -25,9 +25,6 @@ export function BurgerMenu() {
         <div className={`burger__row `}>
           <Link to={`/`}><BtnSvg f={() => { }} svg={general} tooltip={""}/></Link>
           <Link to={`/login`}><BtnSvg f={() => { }} svg={login} tooltip={""} /></Link>
-          <Link to={`/area/settings`}><BtnSvg f={() => { ShowMenu(0) }} svg={client}  tooltip={""}/></Link>
-          <Link to={`/area/bucket`}><BtnSvg f={() => { ShowMenu(1) }} svg={bag} tooltip={""}/></Link>
-          <Link to={`/area/favorite`}><BtnSvg f={() => { ShowMenu(2) }} svg={love} tooltip={""}/></Link>
         </div>
       </div>
     </article>

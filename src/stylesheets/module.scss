@@ -8,6 +8,7 @@
 @import "layout/module.scss";
 
 @import "../components/pages/general/scss/module.scss";
+@import "../components/pages/auth/scss/module.scss";
 
 
 //* подключаю стили для компонентов
@@ -17,6 +18,11 @@
 @import "../components/common/search/scss/module.scss";
 @import "../components/common/btn/scss/module.scss";
 @import "../components/common/navbar/scss/module.scss";
+
+@import "../components/common/login/scss/module.scss";
+@import "../components/common/title/scss/module.scss";
+@import "../components/common/checkbox/scss/module.scss";
+
 
 @import "common/_mod.scss";
 

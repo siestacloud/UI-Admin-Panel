@@ -1,0 +1,32 @@
+.auth {
+  grid-area: 1/2;
+  @include f(center, flex-start, row);
+
+  &__row {
+    // flex-basis: 50%;
+    // @include f(space-between, center, row);
+    gap: 20px;
+    padding: 20px;
+    // background-color: $bg-box-dark;
+    border-radius: 10px;
+  }
+
+  &__img {
+    width: 100%;
+    min-height: 450px;
+    flex: 0 1 50%;
+    border-radius: 8px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (max-width: 867px) {
+    &__row {
+      @include f(space-between, center, column);
+      margin-bottom: 20px;
+    }
+
+  }
+}

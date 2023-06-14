@@ -10,7 +10,7 @@
   height: 100%;
 
     display: grid;
-    grid-template: 1fr/ minmax(86px,86px) minmax(10px,1fr) ;
+    grid-template: 1fr/ minmax(86px,86px) minmax(10px,1fr) minmax(86px,86px);
     padding-top: 100px;
     position: relative;
   }

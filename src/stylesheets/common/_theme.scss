@@ -1,23 +1,15 @@
-$bg-dark: #1b1b1e;
-$bg-grey: #2e2f33;
-$bg-tooltip: #ffffff;
-
-$bg-light: #f1f1f1;
-$title-light: #fff;
-$desc-light: #fff;
+$color-dark: #1b1b1e;
+$color-light: #f1f1f1;
+$color-white: #ffffff;
 
 $font-color-grey: #000000d5;
+$font-color-grey-light: #4d4b4e;
 $font-color-light: #D6D6D6;
 
-$title-grey: #acaaaf;
-$desc-grey: #4d4b4e;
-
-
-$bg-box-dark-tr: #020202b9;
-$bg-box-dark: #19171b;
+$bg-light-hover: #bfbfbf;
 
 .theme-dark{
-  background-color: $bg-dark;
+  background-color: $color-dark;
 }
 .theme-dark-font{
   color: $font-color-light;
@@ -30,22 +22,22 @@ $bg-box-dark: #19171b;
 }
 .theme-dark-hover{
   &:hover {
-    background-color: $bg-dark;
+    background-color: $color-dark;
   }
 }
 
 
 .theme-light{
-  background-color: $bg-light;
+  background-color: $color-light;
 }
 .theme-light-font{
   color: $font-color-grey;
 }
 .theme-light-menu{
-  background-color: $bg-tooltip;
+  background-color: $color-white;
 }
 .theme-light-hover{
   &:hover {
-    background-color: $bg-light;
+    background-color: $color-light;
   }
 }

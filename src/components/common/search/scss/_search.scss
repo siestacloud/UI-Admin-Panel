@@ -11,13 +11,13 @@
     border-radius: 6px;
     // border: 1px solid #d3d3d3;
     outline: none !important;
-    color: $title-grey;
+    color: $font-color-grey-light;
     position: relative;
     transition: all 150ms ease-in-out;
 
     font-size: 14px;
     &::placeholder {
-    color: $title-grey;
+    color: $font-color-grey-light;
 
     }
 
